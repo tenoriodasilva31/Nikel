@@ -1,3 +1,5 @@
+/* Default styles */
+
 #login{
   background: linear-gradient(120deg,  #4c79d3 44.9%, #ffffff 45%) no-repeat fixed;
 }
@@ -5,6 +7,7 @@
 #app{
   background: linear-gradient(120deg,  #ffffff 44.9%, #4c79d3 45%) no-repeat fixed;
 }
+
 header{
   border-bottom: 1px solid #bebcbc;
   padding: 5px;
@@ -15,7 +18,7 @@ header{
   color: #4e0070;
 }
 
-.color-secundary{
+.color-secondary{
   color: #4c79d3;
 }
 
@@ -104,4 +107,41 @@ header{
 
 .logout{
   min-width: 5rem !important;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+  /* Modify styles for small screens */
+  
+  .button-login,
+  .button-default {
+    width: 80%;
+    margin: 0 10%;
+  }
+  
+  .button-float {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Modify styles for medium screens */
+  
+  .button-login,
+  .button-default {
+    width: 70%;
+    margin: 0 15%;
+  }
+  
+  .button-float {
+    height: 55px;
+    width: 55px;
+    font-size: 32px;
+    bottom: 1rem;
+  }
 }
